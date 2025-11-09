@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "raseshkatakia-cell.github",
+  "orientation": "any",
+  "scope": "/RK-fitness-app",
+  "short_name": "raseshkatakia-cell.github",
+  "start_url": "/RK-fitness-app.",
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "display_override": [
+    "browser",
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay",
+    "standalone"
+  ]
+}
