@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RK Fitness App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo-192.png" alt="RK Fitness Logo" class="logo">
+    <h1>RK Fitness App</h1>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab active" onclick="openTab('bmi')">BMI</button>
+      <button class="tab" onclick="openTab('bmr')">BMR</button>
+      <button class="tab" onclick="openTab('bodyfat')">Body Fat</button>
+      <button class="tab" onclick="openTab('ideal')">Ideal Weight</button>
+      <button class="tab" onclick="openTab('whr')">WHR</button>
+    </div>
+
+    <section id="bmi" class="tab-content active">
+      <h2>BMI Calculator</h2>
+      <input type="number" id="bmiWeight" placeholder="Weight (kg)">
+      <input type="number" id="bmiHeight" placeholder="Height (cm)">
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p id="bmiResult"></p>
+    </section>
+
+    <section id="bmr" class="tab-content">
+      <h2>BMR Calculator</h2>
+      <input type="number" id="bmrWeight" placeholder="Weight (kg)">
+      <input type="number" id="bmrHeight" placeholder="Height (cm)">
+      <input type="number" id="bmrAge" placeholder="Age">
+      <select id="bmrGender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="calculateBMR()">Calculate BMR</button>
+      <p id="bmrResult"></p>
+    </section>
+
+    <section id="bodyfat" class="tab-content">
+      <h2>Body Fat %</h2>
+      <input type="number" id="bfWaist" placeholder="Waist (cm)">
+      <input type="number" id="bfNeck" placeholder="Neck (cm)">
+      <input type="number" id="bfHeight" placeholder="Height (cm)">
+      <select id="bfGender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="calculateBodyFat()">Calculate Body Fat</button>
+      <p id="bfResult"></p>
+    </section>
+
+    <section id="ideal" class="tab-content">
+      <h2>Ideal Weight</h2>
+      <input type="number" id="iwHeight" placeholder="Height (cm)">
+      <select id="iwGender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="calculateIdealWeight()">Calculate Ideal Weight</button>
+      <p id="iwResult"></p>
+    </section>
+
+    <section id="whr" class="tab-content">
+      <h2>Waist-Hip Ratio</h2>
+      <input type="number" id="whrWaist" placeholder="Waist (cm)">
+      <input type="number" id="whrHip" placeholder="Hip (cm)">
+      <button onclick="calculateWHR()">Calculate WHR</button>
+      <p id="whrResult"></p>
+    </section>
+
+    <button class="share-btn" onclick="shareApp()">Share App</button>
+  </main>
+
+  <footer>
+    <p>© 2025 RK Fitness | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

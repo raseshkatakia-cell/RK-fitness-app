@@ -1,0 +1,13 @@
+{
+  "name": "RK Fitness App",
+  "short_name": "RK Fitness",
+  "description": "Accurate BMI, BMR, Body Fat, Ideal Weight, and WHR calculators — all in one app by RK Fitness.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0d0b1e",
+  "theme_color": "#3f0071",
+  "icons": [
+    { "src": "logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "logo-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
